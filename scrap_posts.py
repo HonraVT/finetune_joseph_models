@@ -178,7 +178,7 @@ class ForumScraper:
         texts = ""
         bb_wrapper = tree.xpath('//div[@class="bbWrapper"]')
         if bb_wrapper:
-            replace_img_with_text(bb_wrapper[0], "negresco", "negresco")
+            replace_img_with_text(bb_wrapper[0], "negresco", "preto")
             texts = extract_text_from_html(bb_wrapper[0])
 
         return quote, texts
